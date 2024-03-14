@@ -94,6 +94,51 @@ header {
   transform: translateY(0);
 }
 
+.NAVBAR_LOGIN {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #009efa;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.NAVBAR_LOGIN:hover,
+.NAVBAR_LOGIN:focus {
+  background-color: #21a9f8;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.NAVBAR_LOGIN:hover {
+  transform: translateY(-1px);
+}
+
+.NAVBAR_LOGIN:active {
+  background-color: #0186d3;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
 /* ******************************************************** */
 
 body {
@@ -106,5 +151,25 @@ h1 {
   font-size: 45px; 
   font-weight: normal; 
   line-height: 48px; 
-  margin-left: 50px;
+}
+
+h2 { 
+  color: #000000;
+  font-family: 'Trocchi', serif; 
+  font-size: 25px; 
+  font-weight: normal; 
+  line-height: 48px; 
+}
+
+#home_main_container {
+  background-color: rgb(250, 224, 191);
+  margin-left: 10px;
+}
+
+.FLEX_CONTAINER {
+  display: flex;
+}
+
+.NAVBAR_CONTAINER_FIRST {
+  flex-grow: 1;
 }

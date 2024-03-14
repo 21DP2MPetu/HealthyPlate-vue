@@ -5,9 +5,15 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
 <div>
   <header>
-      <nav>
-        <RouterLink to="/" class="NAVBAR_HOME">Home</RouterLink>
-        <RouterLink to="/about" class="NAVBAR">About</RouterLink>
+      <nav class="FLEX_CONTAINER">
+        <div class="NAVBAR_CONTAINER_FIRST">
+          <RouterLink to="/" class="NAVBAR_HOME">Home</RouterLink>
+          <RouterLink to="/about" class="NAVBAR">About</RouterLink>
+        </div>
+        <div class="NAVBAR_CONTAINER_SECOND">
+          <RouterLink to="/login" class="NAVBAR_LOGIN">Login</RouterLink>
+          <RouterLink to="/register" class="NAVBAR_LOGIN">Register</RouterLink>
+        </div>
       </nav>
   </header>
 </div>
